@@ -12,7 +12,6 @@
   include('assets/scripts/db_connect.php');
 
   session_start();
-  $_SESSION['prev_url'] = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
   if (isset($_SESSION['login']))
   {
