@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(at bottom right, #fdfdfd 0, #fdfdfd 8px, 
+  rgba(253,253,253,0.2) 8px, rgba(253,253,253,0.2) 16px, rgba(253,253,253,0.75) 16px, rgba(253,253,253,0.75) 24px, 
+  rgba(253,253,253,0.25) 24px, rgba(253,253,253,0.25) 32px, rgba(253,253,253,0.3) 32px, rgba(253,253,253,0.3) 40px, 
+  rgba(253,253,253,0.75) 40px, rgba(253,253,253,0.75) 48px, rgba(253,253,253,0.2) 48px, rgba(253,253,253,0.2) 56px, 
+  transparent 56px, transparent 64px), 
+  radial-gradient(at top left, transparent 0, transparent 8px, rgba(253,253,253,0.2) 8px, rgba(253,253,253,0.2) 16px,
+  rgba(253,253,253,0.75) 16px, rgba(253,253,253,0.75) 24px, rgba(253,253,253,0.3) 24px, rgba(253,253,253,0.3) 32px,
+  rgba(253,253,253,0.25) 32px, rgba(253,253,253,0.25) 40px, rgba(253,253,253,0.75) 40px, rgba(253,253,253,0.75) 48px,
+  rgba(253,253,253,0.2) 48px, rgba(253,253,253,0.2) 56px, #fdfdfd 56px, #fdfdfd 64px, transparent 64px, transparent 160px);
+  background-blend-mode: multiply;
+  background-size: 64px 64px, 64px 64px;
+  background-color: #f2f2f2;
+}
+
+
+.logotype {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Doto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: #52dc27;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+  color: #277adc;
+}
+.form input.button{
+  color: #fff;
+  background: #52dc27;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #277adc;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #52dc27;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+  color: #277adc;
+}
+
+#error-message h3{
+  color: red;
+  text-align: center;
+  background-color: lightpink;
+  border-radius: 6px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+#success-message h3{
+  color: whitesmoke;
+  text-align: center;
+  background-color: #08b308;
+  border-radius: 6px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
